@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARDEOS :V </title>
+    <link rel="stylesheet" href="css/estilo.css" type="text/css">
+</head>
+<body bgcolor=99,8a,ec>
+    <header>
+        <div id="logo"><!--Id para trabajar con css-->
+            <img src="img/logo.png" alt="logo" height="80" width="200">
+        </div>
+    </header>
+    
+    <section id="formulario">
+        <form name="Nuevo Usuario" method="POST" action="php/ConexionCrearUsuario.php">
+            Nickname:<br>
+            <input type="text" name="nickname" pattern="[a-zA-Z0-9]+" placeholder="Ingrese su Nickname" required><br>
+            Contraseña:<br>
+            <input type="password" name="contraseña" maxlength="20" autocomplete="new-password" placeholder="Ingrese su Contraseña" required><br>
+            Nombre:<br>
+            <input type="text" name="nombre" placeholder="Ingrese su Nombre" required><br>
+            Apellidos:<br>
+            <input type="text" name="apellidos" placeholder="Ingrese sus Apellidos" required><br>
+            Email:<br>
+            <input type="email" name="correo" placeholder="Ingrese su Email" required><br>
+            Edad:<br>
+            <input type="number" name="edad" min="18" placeholder="Ingrese su Edad" required><br>
+            Descripcion:<br>
+            <textarea name="descripcion" placeholder="Ingrese su Descripcion"></textarea><br>
+
+            <input type="submit" name="enviar" class="boton" value="Registrarse">
+            <input type="reset" class="boton" value="Borrar">
+
+            <hr>
+
+        </form>
+    </section>
+
+    <section id="formulario2">
+        <form name="contacto" method="POST" action="php/IniciarSesion.php">
+            Nickname:<br>
+            <input type="text" name="nickname" placeholder="Ingrese su Nickname" required><br>
+            Contraseña:<br>
+            <input type="password" name="contraseña" autocomplete="off" placeholder="Ingrese su Contraseña" required><br>
+
+            <hr>
+
+            <input type="submit" name="enviar" class="boton" value="Iniciar Sesion">
+
+        </form>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; Gpzov ESTARDEOS :V </p>
+    </footer>
+
+</body>
+</html>

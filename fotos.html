@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARDEOS :V</title>
+     <link href="css/estilo.css" rel='stylesheet' type='text/css'/> 
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/logo.png" alt="logo" height="80" width="200">
+        </div>
+        <nav class="menu">
+            <ul> <!-- lista desordenada -->
+                <li> <a href="index.html">Inicio</a></li>
+                <li> <a href="perfil.html">Mi perfil</a></li>
+                <li> <a href="amigos.html">Mis amigos</a></li>
+                <li> <a href="fotos.html">Mis fotos</a></li>
+                <li> <a href="agregar.html">Buscar amigos</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+<section id="recuadros">
+    <h2>Mis fotos</h2>
+    <h3><form action="php/SubirFoto.php" method="=POST" enctype="multipart/form-data"/>
+    Añadir imagen:<input name="archivo" id="archivo" type="file" accept=".jpg, .jpeg, .png" required/>
+<input type="submit" name="subir" id="subir"></form></h3>
+    <section class="recuadro">
+        <img src="img/foto1.png" height="200" width="290">
+    </section>
+    <section class="recuadro">
+        <img src="img/foto 2.png" height="200" width="290">
+    </section>
+    <section class="recuadro">
+        <img src="img/foto 3.png" height="200" width="290">
+    </section>
+    <section class="recuadro">
+        <img src="img/foto 4.png" height="200" width="290">
+    </section>
+    <section class="recuadro">
+        <img src="img/foto 5.png" height="200" width="290">
+    </section>
+    <section class="recuadro">
+        <img src="img/foto 6.png" height="200" width="290">
+    </section>
+</section> 
+<footer>
+    <p>Copyrigth &copy; Gpzov ESTARDEOS :V</p>
+</footer>
+</html>
